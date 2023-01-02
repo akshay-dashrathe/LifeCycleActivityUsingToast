@@ -1,10 +1,10 @@
 package com.example.program7;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,8 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("Activity_Lifecycle","onCreate invoked");
-        Toast.makeText(MainActivity.this,"Created",Toast.LENGTH_SHORT).show();
+
     }
     @Override
     protected void onStart() {
@@ -51,4 +50,5 @@ public class MainActivity extends AppCompatActivity {
         Log.d("Activity_Lifecycle","onDestroy invoked");
         Toast.makeText(MainActivity.this,"Destroy",Toast.LENGTH_SHORT).show();
     }
+
 }
